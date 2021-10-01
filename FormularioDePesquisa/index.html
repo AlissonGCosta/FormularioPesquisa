@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1 class="titulo" 
+                id="texto-centro">
+                    Formulário de pesquisa 
+            </h1>
+
+            <p id="descricao" 
+                class="descricao-centro">
+                    Obrigado por nos ajudar a melhorar a plataforma
+            </p>
+        </header>
+
+        <form id="pesquisa-form" class="pesquisa-form">
+            <div class="grupo-pesquisa">
+                <label 
+                    for="Nome" 
+                    id="nome-labe" 
+                    class="nome-label">Nome:
+                </label>
+                <input 
+                    type="text" 
+                    name="Nome" 
+                    id="input-nome" 
+                    class="input-nome" 
+                    placeholder="Insira seu nome aqui:" 
+                    required>
+            </div>
+
+            <div class="grupo-pesquisa">
+                <label 
+                    for="Email" 
+                    id="email-labe" 
+                    class="email-label">Email:
+                </label>
+                <input 
+                    type="text" 
+                    name="email" 
+                    id="input-email" 
+                    class="input-email" 
+                    placeholder="Insira seu Email aqui:" 
+                    required>
+            </div>
+
+            <div class="grupo-pesquisa">
+                <label 
+                    for="Idade" 
+                    id="idade-labe" 
+                    class="idade-label">Idade <span 
+                    class = "dica">(opcional)</span>: 
+                </label>
+                <input 
+                    type="number" 
+                    name="Idade" 
+                    id="input-idade" 
+                    class="input-idade" 
+                    placeholder="insira sua idade aqui:" 
+                    required 
+                    min="10" max="99">
+            </div>
+
+            <div class="grupo-pesquisa">
+                <p>
+                    Qual opção descreve melhor sua função atual?
+                </p>
+                <select name="funcao" id="suspenso" class="suspenso">
+                    <option disabled selected value>Selecione sua função cosrrespondente: </option>
+                    <option value="estudante">Estudante</option>
+                    <option value="trabalho">Trabalho em tempo integral</option>
+                    <option value="aprendiz">Estudante em tempo integral</option>
+                    <option value="pNao">Prefiro não dizer</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+            </div>
+
+            <div class="grupo-pesquisa">
+               <p>Você recomendaria esse formulario a um amigo? </p>
+               <label>
+                   <input 
+                        name="recomendacao-usuário"
+                        type="radio" 
+                        value="sim" 
+                        class="check-box" 
+                        checked>
+                            sim, recomendo muito
+               </label>
+
+               <label>
+                    <input 
+                        name="recomendacao-usuário"
+                        type="radio" 
+                        value="talvez" 
+                        class="check-box">
+                            Talvez
+               </label>
+
+               <label>
+                    <input 
+                        name="recomendacao-usuário"
+                        type="radio" 
+                        value="nao" 
+                        class="check-box">
+                            Nâo, eu não recomendo
+               </label>
+            </div>
+
+            <div class="grupo-pesquisa">
+                <p>
+                    O que voce mais gosta de Fazer na area de TI:
+                </p>
+                <select name="funcao" id="suspenso" class="suspenso">
+                    <option disabled selected value>selecione um opção</option>
+                    <option value="desafios">desafios</option>
+                    <option value="projetos">Projetos</option>
+                    <option value="comunidade">Comunidade</option>
+                    <option value="codigosAbertos">Codigos Abertos</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+            </div>
+
+            <div class="grupo-pesquisa">
+                <p>O que você gostaria de ver melhorado? span.(Marque todas as opções aplicáveis)</p>
+                <label>
+                    <input 
+                         name="preferencia"
+                         type="checkbox" 
+                         value="projetos-front-end" 
+                         class="check-box" 
+                         >
+                             Projetos em Front-end
+                </label>
+
+                <label>
+                    <input 
+                         name="preferencia"
+                         type="checkbox" 
+                         value="projetos-back-end" 
+                         class="check-box" 
+                         >
+                             projetos em back-end
+                </label>
+
+                <label>
+                    <input 
+                         name="preferencia"
+                         type="checkbox" 
+                         value="ciencia-dados" 
+                         class="check-box" 
+                         >
+                             Ciencias de Dados
+                </label>
+
+                <label>
+                    <input 
+                         name="preferencia"
+                         type="checkbox" 
+                         value="desafios" 
+                         class="check-box" 
+                         >
+                             Desafios
+                </label>
+
+                <label>
+                    <input 
+                         name="preferencia"
+                         type="checkbox" 
+                         value="comunidade-open-sourece" 
+                         class="check-box" 
+                         >
+                            Comunidade open source
+                </label>
+
+                <label>
+                    <input 
+                         name="preferencia"
+                         type="checkbox" 
+                         value="salas-ajuda" 
+                         class="check-box" 
+                         > 
+                         Salas de ajuda
+
+                </label>
+
+                <label>
+                    <input 
+                         name="preferencia"
+                         type="checkbox" 
+                         value="video" 
+                         class="check-box" 
+                         >
+                             Videos
+                </label>
+
+                <label>
+                    <input 
+                         name="preferencia"
+                         type="checkbox" 
+                         value="wiki" 
+                         class="check-box" 
+                         >
+                             Wiki
+                </label>
+
+                <label>
+                    <input 
+                         name="preferencia"
+                         type="checkbox" 
+                         value="forum" 
+                         class="check-box" 
+                         >
+                             Forum
+                </label>
+
+                <label>
+                    <input 
+                         name="preferencia"
+                         type="checkbox" 
+                         value="curso-adicional" 
+                         class="check-box" 
+                         > Curso Adicionais
+                             
+                </label>
+
+            </div>
+
+            <div class="grupo-pesquisa">
+                <p>
+                    Comentario ou sugestões
+                </p>
+                <textarea 
+                    name="comentario" 
+                    id="comentario" 
+                    class = "input-areaTexto" 
+                    placeholder="coloque seu comentario aqui:"></textarea>
+            </div>
+
+            <div class="grupo-pesquisa">
+                <button 
+                    type = "submit" 
+                    id="enviar" 
+                    class="envio-button">
+                        Enviar
+                </button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
